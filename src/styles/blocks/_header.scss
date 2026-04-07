@@ -1,0 +1,51 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 24px;
+
+    @include on-tablet {
+      padding-top: 32px;
+    }
+  }
+
+  &__logo {
+    display: block;
+
+    img {
+      width: 127px;
+      height: auto;
+
+      @include on-tablet {
+        width: 152px;
+      }
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__icon-link,
+  &__menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
