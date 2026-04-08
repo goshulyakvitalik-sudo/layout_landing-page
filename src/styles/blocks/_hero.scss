@@ -14,16 +14,20 @@
   }
 
   &__image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 100%;
-    width: auto;
-    max-width: none;
-    transform: translate(-44%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-    @include on-tablet {
-      transform: translate(-46%, -50%);
+  height: 100%;
+  width: auto;
+  max-width: none;
+
+  transform: translate(-44%, -50%);
+
+  @include on-desktop {
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -45%);
     }
   }
 

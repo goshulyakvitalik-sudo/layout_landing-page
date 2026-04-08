@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nothing Landing</title>
   <link rel="stylesheet" href="src/styles/main.scss">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="src/images/favicon.png">
 </head>
 <body class="page__body">
   <header class="header">
@@ -14,13 +18,16 @@
       </a>
 
       <div class="header__actions">
-        <a
-          href="tel:+123455555555"
-          class="header__icon-link"
-          aria-label="Call us"
-        >
-          <img src="./src/images/icons/phone.svg" alt="Phone icon">
-        </a>
+        <div class="header__phone-wrapper">
+  <span class="header__phone-text">
+    +1 234 5555-55-55
+  </span>
+
+  <a href="tel:+123455555555" class="header__icon-link">
+    <img src="./src/images/icons/phone.svg" alt="Phone">
+  </a>
+</div>
+
 
         <a
           href="#menu"

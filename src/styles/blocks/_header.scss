@@ -48,4 +48,27 @@
       height: 24px;
     }
   }
+
+  &__phone-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone-text {
+    position: absolute;
+    right: 32px;
+    white-space: nowrap;
+    font-size: 14px;
+    font-weight: 500;
+
+    opacity: 0;
+    transform: translateX(10px);
+    transition: 0.3s ease;
+  }
+
+  &__phone-wrapper:hover &__phone-text {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
