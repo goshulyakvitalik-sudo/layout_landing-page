@@ -269,12 +269,13 @@
         <div class="contact__content">
           <h2 class="section-title contact__title">Contact us</h2>
 
-          <form action="#" method="post" class="contact__form form">
+          <form action="#" method="post" class="contact__form form" onsubmit="this.reset(); return false;">
             <input
               type="text"
               name="name"
               placeholder="Name"
               class="form__input"
+              required
             >
 
             <input
@@ -282,12 +283,14 @@
               name="email"
               placeholder="Email"
               class="form__input"
+              required
             >
 
             <textarea
               name="message"
               placeholder="Message"
               class="form__textarea"
+              required
             ></textarea>
 
             <button type="submit" class="button button--light form__button">

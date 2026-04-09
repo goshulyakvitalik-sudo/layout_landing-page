@@ -3,6 +3,7 @@
   color: $color-black;
   background-color: $color-background;
 
+
   &__body {
     min-width: 320px;
   }
@@ -24,4 +25,8 @@ body {
   @include on-tablet {
     font-size: 48px;
   }
+}
+
+.page:has(.menu:target) {
+  overflow: hidden;
 }

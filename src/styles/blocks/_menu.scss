@@ -10,6 +10,8 @@
     transform $transition-duration ease,
     opacity $transition-duration ease;
 
+  overflow: auto;
+
   &:target {
     opacity: 1;
     pointer-events: auto;
@@ -31,6 +33,11 @@
     align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 64px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $color-background;
 
     @include on-tablet {
       margin-bottom: 96px;
