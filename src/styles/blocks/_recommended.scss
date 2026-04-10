@@ -7,27 +7,39 @@
 
   &__title {
     margin-bottom: 48px;
+
+    @include on-tablet {
+      margin-bottom: 56px;
+    }
   }
 
   &__list {
     display: grid;
-    row-gap: 40px;
+    grid-template-columns: 1fr;
+    gap: 40px;
 
     @include on-tablet {
-      row-gap: 56px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px 0;
+
     }
   }
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
   &__image-link {
     display: block;
     margin-bottom: 24px;
-    background-color: $color-surface;
     overflow: hidden;
+    background-color: $color-surface;
   }
 
   &__image {
+    display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
@@ -43,13 +55,17 @@
     font-size: 18px;
     line-height: 1.4;
     font-weight: 700;
+
+    @include on-tablet {
+      font-size: 24px;
+    }
   }
 
   &__description {
     margin-bottom: 12px;
-    max-width: 672px;
     font-size: 16px;
     line-height: 1.4;
+    flex-grow: 1;
   }
 
   &__price {
