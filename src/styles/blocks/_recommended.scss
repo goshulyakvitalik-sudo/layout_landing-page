@@ -20,7 +20,7 @@
 
     @include on-tablet {
       grid-template-columns: repeat(3, 1fr);
-      gap: 24px 0;
+      gap: 24px;
 
     }
   }
