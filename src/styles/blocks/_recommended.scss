@@ -5,13 +5,21 @@
     padding-block: 120px;
   }
 
-  &__title {
-    margin-bottom: 48px;
+&__title {
+  margin-bottom: 48px;
+  max-width: 620px;
 
-    @include on-tablet {
-      margin-bottom: 56px;
-    }
+  font-size: 48px;
+  line-height: 1.1;
+
+  @include on-tablet {
+    max-width: 620px;
   }
+
+  @include on-desktop {
+    max-width: 900px;
+  }
+}
 
   &__list {
     display: grid;
